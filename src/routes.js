@@ -1,32 +1,40 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import Home from './views/Home.vue';
-import Blog from './views/Blog.vue'
-import CreateBlog from './views/CreateBlog.vue'
-import PostDetail from './views/PostDetail.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import Home from "./views/Home.vue";
+import Blog from "./views/Blog.vue";
+import CreateBlog from "./views/CreateBlog.vue";
+import PostDetail from "./views/PostDetail.vue";
+import UpdatePost from "./views/UpdatePost.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
+    path: "/",
+    name: "Home",
     component: Home,
   },
 
   {
-    path: '/blog',
-    name: 'Blog',
+    path: "/blog",
+    name: "Blog",
     component: Blog,
   },
 
   {
-    path: '/blog-create',
-    name: 'CreateBlog',
+    path: "/blog-create",
+    name: "CreateBlog",
     component: CreateBlog,
   },
   {
-    path: '/blog-detail/:id',
-    name: 'PostDetail',
+    path: "/blog-detail/:id",
+    name: "PostDetail",
     component: PostDetail,
-    props: true
+    props: true,
+  },
+
+  {
+    path: "/blog-update/:id",
+    name: "UpdatePost",
+    component: UpdatePost,
+    props: true,
   },
 ];
 
