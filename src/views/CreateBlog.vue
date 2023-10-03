@@ -15,7 +15,6 @@ import { savePost } from '../composables/Post'
 import { ref } from 'vue'
 
 const successMsg = ref('')
-
 const createPost = (postinfo) => {
     savePost(postinfo).then((res) => {
         console.log(res.data)
