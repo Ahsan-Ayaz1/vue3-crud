@@ -1,8 +1,9 @@
 <template>
-  <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <Navbar/>
+  <router-view></router-view>
 </template>
 
 <script setup>
+import Navbar from './components/Navbar.vue';
+
 </script>
